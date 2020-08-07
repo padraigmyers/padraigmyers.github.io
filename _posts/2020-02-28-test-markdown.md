@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
+title: eili5 Azure App Registrations
+subtitle: Authenticating against azure without passwords
+gh-repo: padraigmyers/padraigmyers.github.io
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
