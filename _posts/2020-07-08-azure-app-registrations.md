@@ -39,3 +39,4 @@ return new SqlConnection("Server=tcp:???.database.windows.net,1433;Database=???"
         .GetAwaiter()
         .GetResult()
 };
+```
