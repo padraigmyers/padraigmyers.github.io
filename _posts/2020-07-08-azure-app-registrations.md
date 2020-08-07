@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure App Registrations
+title: Azure App Registrations and certificates
 subtitle: Authenticating against azure without passwords
 gh-repo: padraigmyers/padraigmyers.github.io
 gh-badge: [star, fork, follow]
@@ -16,7 +16,7 @@ The solution in Azure is to use [App Registrations](https://docs.microsoft.com/e
 Think of an App Registration as an application's version of a **_user_**.  
 The app reaches out to Azure and _proves_ (details below) that is it that application, it then gets a token (similar to an OAuth token) that allow the app to call out to other services in azure that it has access to (e.g. Key Vault, App Configuration, SQL Database etc).
 
-The app has a number of ways to prove it is that app, one of the most useful way is via a a certificate. A certificate can be created, put into the certificate store on the machine where the application runs, and also uploaded to the **_Certificates & Secrets_** section of the App Registration in Azure.  
+The app has a number of ways to prove it is that app, one way is by using a certificate. A certificate can be created, put into the certificate store on the machine where the application runs, and also uploaded to the **_Certificates & Secrets_** section of the App Registration in Azure.  
 
 When the app wants to access some service on azure it calls out to it's app registration with the tenantId and clientId of the app registration (to identify the app registration in azure) and also passes the certificate (to prove that it is allowed to use that app registration).  
 It then gets a token and can call the service it wants to access.  
