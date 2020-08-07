@@ -4,7 +4,7 @@ title: eili5 Azure App Registrations
 subtitle: Authenticating against azure without passwords
 gh-repo: padraigmyers/padraigmyers.github.io
 gh-badge: [star, fork, follow]
-tags: [csharp][azure][auth]
+tags: [csharp,azure,auth]
 comments: true
 ---
 
